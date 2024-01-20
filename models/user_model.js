@@ -12,6 +12,10 @@ const userSchema = Schema({
 		required: true
 	},
 	image: {
-		
+		type: String,
 	}
+}, {
+	timestamps: true
 })
+
+export default mongoose.model('user', userSchema);
